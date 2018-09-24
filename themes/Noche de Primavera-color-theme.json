@@ -258,26 +258,16 @@
       "name": "Invalid",
       "scope": "invalid",
       "settings": {
-        "background": "#F99DA5",
-        "fontStyle": "",
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "name": "Separator",
-      "scope": "meta.separator",
-      "settings": {
-        "background": "#BBDAFE",
-        "foreground": "#FFFFFF"
+        "fontStyle": "underline",
+        "foreground": "#ff9486"
       }
     },
     {
       "name": "Deprecated",
       "scope": "invalid.deprecated",
       "settings": {
-        "background": "#EBBBFF",
-        "fontStyle": "",
-        "foreground": "#FFFFFF"
+        "fontStyle": "underline",
+        "foreground": "#dadada"
       }
     },
     {
@@ -305,8 +295,8 @@
       "name": "Diff header",
       "scope": "meta.diff.header.from-file, meta.diff.header.to-file",
       "settings": {
-        "foreground": "#FFFFFF",
-        "background": "#4271ae"
+        "fontStyle": "italic",
+        "foreground": "#fffdf5"
       }
     },
     {
