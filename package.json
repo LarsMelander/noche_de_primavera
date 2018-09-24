@@ -1,0 +1,22 @@
+{
+    "name": "noche-de-primavera",
+    "displayName": "Noche de Primavera",
+    "description": "A dark theme that's easy on the eyes.",
+    "version": "0.0.1",
+    "publisher": "Basedrop",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Noche de Primavera",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Noche de Primavera-color-theme.json"
+            }
+        ]
+    }
+}
