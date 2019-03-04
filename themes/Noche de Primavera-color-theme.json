@@ -70,7 +70,7 @@
     },
     {
       "name": "Keyword",
-      "scope": "keyword",
+      "scope": "keyword, meta.var.expr.js",
       "settings": {
         "foreground": "#fffeb6"
       }
@@ -106,7 +106,7 @@
     },
     {
       "name": "Operator, Comment",
-      "scope": "keyword.operator.other, comment.wildcard, comment.unused",
+      "scope": "keyword.operator.other, keyword.operator.logical, comment.wildcard, comment.unused, storage.type.function.arrow.js",
       "settings": {
         "foreground": "#c0c0c0"
       }
@@ -148,7 +148,7 @@
     },
     {
       "name": "Variable",
-      "scope": "variable.other.constant",
+      "scope": "variable.other.constant, variable.other.object.js",
       "settings": {
         "foreground": "#c3cfda"
       }
@@ -245,13 +245,6 @@
       "scope": "keyword.other.special-method",
       "settings": {
         "foreground": "#ffd17b"
-      }
-    },
-    {
-      "name": "Storage",
-      "scope": "storage, storage.type, entity.name.tag.css",
-      "settings": {
-        "foreground": "#EBBBFF"
       }
     },
     {
