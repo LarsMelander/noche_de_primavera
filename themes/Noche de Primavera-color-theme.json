@@ -55,22 +55,14 @@
     "terminal.ansiBrightWhite": "#ffffff"
   },
   "tokenColors": [{
+	  "scope": "source",
       "settings": {
         "foreground": "#ffffff"
       }
     },
     {
-      "scope": [
-        "meta.embedded",
-        "source.groovy.embedded"
-      ],
-      "settings": {
-        "foreground": "#ffffff"
-      }
-    },
-    {
-      "name": "Keyword",
-      "scope": "keyword, meta.var.expr.js",
+      "name": "Keyword, Storage type",
+      "scope": "keyword, meta.var.expr.js, storage.type",
       "settings": {
         "foreground": "#fffeb6"
       }
@@ -98,7 +90,8 @@
     },
     {
       "name": "Operator",
-      "scope": "keyword.operator.class, keyword.operator, keyword.operator.arithmetic, constant.other, source.php.embedded.line",
+	  "scope": ["keyword.operator.class", "keyword.operator", "keyword.operator.arithmetic",
+		"constant.other", "source.php.embedded.line"],
       "settings": {
         "fontStyle": "",
         "foreground": "#ffffff"
@@ -106,7 +99,8 @@
     },
     {
       "name": "Operator, Comment",
-      "scope": "keyword.operator.other, keyword.operator.logical, comment.wildcard, comment.unused, storage.type.function.arrow.js",
+	  "scope": ["keyword.operator.other", "keyword.operator.logical", "comment.wildcard",
+		"comment.unused", "storage.type.function.arrow.js", "keyword.operator.class.php"],
       "settings": {
         "foreground": "#c0c0c0"
       }
@@ -155,7 +149,7 @@
     },
     {
       "name": "Module Variable",
-      "scope": "variable.other.readwrite.module",
+      "scope": "variable.other.readwrite.module, variable.other.makefile, variable.other.php",
       "settings": {
         "foreground": "#ffd99f"
       }
@@ -169,7 +163,8 @@
     },
     {
       "name": "Constant, Function Argument, Tag Attribute, Embedded",
-      "scope": "support.constant, constant.character, variable.parameter, keyword.other.unit, punctuation.section.embedded.elixir",
+	  "scope": ["support.constant", "constant.character", "variable.parameter", "keyword.other.unit",
+		"punctuation.section.embedded.elixir", "keyword.control.directive"],
       "settings": {
         "foreground": "#ffc58f"
       }
@@ -211,11 +206,10 @@
       }
     },
     {
-      "name": "Function",
-      "scope": "entity.name.function",
+      "name": "Function, Punctuation",
+      "scope": "entity.name.function, punctuation.separator.key-value.makefile",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#f7ffe8"
+        "fontStyle": "italic"
       }
     },
     {
