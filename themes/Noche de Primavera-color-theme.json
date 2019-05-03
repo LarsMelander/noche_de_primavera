@@ -142,14 +142,14 @@
     },
     {
       "name": "Variable",
-      "scope": "variable.other.constant, variable.other.object.js",
+      "scope": "variable.other.constant, variable.other.object.js, constant.type-constructor",
       "settings": {
         "foreground": "#c3cfda"
       }
     },
     {
       "name": "Module Variable",
-      "scope": "variable.other.readwrite.module, variable.other.makefile, variable.other.php",
+      "scope": "variable.other.readwrite.module, variable.other.makefile, variable.other.php, support.module",
       "settings": {
         "foreground": "#ffd99f"
       }
