@@ -156,20 +156,27 @@
     },
     {
       "name": "Number, Constant",
-      "scope": "constant.numeric, constant.language",
+      "scope": "constant.numeric, constant.language, keyword.other.unit",
       "settings": {
         "foreground": "#baaeff"
       }
     },
     {
-      "name": "Constant, Function Argument, Tag Attribute, Embedded",
-	  "scope": ["support.constant", "constant.character", "variable.parameter", "keyword.other.unit",
-		"punctuation.section.embedded.elixir", "keyword.control.directive"],
+      "name": "Constant, Function Argument, Tag Attribute, Embedded, Variable Other",
+	  "scope": ["support.constant", "constant.character", "variable.parameter",
+		"punctuation.section.embedded.elixir", "keyword.control.directive", "variable.other.value"],
       "settings": {
         "foreground": "#ffc58f"
       }
     },
-    {
+	{
+		"name": "Constant",
+		"scope": ["support.constant"],
+		"settings": {
+			"foreground": "#ffffff"
+		}
+	},
+	{
       "name": "Embedded",
       "scope": "source.elixir.embedded.source",
       "settings": {
