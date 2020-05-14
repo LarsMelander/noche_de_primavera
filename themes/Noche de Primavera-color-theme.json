@@ -66,10 +66,18 @@
 			}
 		},
 		{
-			"name": "Keyword, Storage type, Support Function",
-			"scope": "keyword, meta.var.expr.js, storage.type, support.function",
+			"name": "Keyword, Storage type",
+			"scope": "keyword, meta.var.expr.js, storage.type, storage.class",
 			"settings": {
 				"foreground": "#fffeb6"
+			}
+		},
+		{
+			"name": "Support Function",
+			"scope": "support.function",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ffe3b6"
 			}
 		},
 		{
@@ -103,7 +111,6 @@
 				"source.php.embedded.line"
 			],
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#ffffff"
 			}
 		},
@@ -112,6 +119,9 @@
 			"scope": [
 				"keyword.operator.other",
 				"keyword.operator.logical",
+				"keyword.operator.misc",
+				"keyword.operator.comparison",
+				"keyword.operator.sigil",
 				"comment.wildcard",
 				"comment.unused",
 				"storage.type.function.arrow.js",
@@ -169,11 +179,12 @@
 			}
 		},
 		{
-			"name": "Module Variable",
+			"name": "Module Variable, Storage Modifier",
 			"scope": [
 				"variable.other.readwrite.module",
 				"variable.other.makefile",
-				"support.module"
+				"support.module",
+				"storage.modifier"
 			],
 			"settings": {
 				"foreground": "#ffd99f"
@@ -184,6 +195,13 @@
 			"scope": "constant.numeric, constant.language, keyword.other.unit",
 			"settings": {
 				"foreground": "#baaeff"
+			}
+		},
+		{
+			"name": "Special Method",
+			"scope": "keyword.other.special-method",
+			"settings": {
+				"foreground": "#ffd17b"
 			}
 		},
 		{
@@ -264,13 +282,6 @@
 			"scope": "meta.function-call, meta.block-level, markup.changed.git_gutter",
 			"settings": {
 				"foreground": "#BBDAFF"
-			}
-		},
-		{
-			"name": "Special Method",
-			"scope": "keyword.other.special-method",
-			"settings": {
-				"foreground": "#ffd17b"
 			}
 		},
 		{
