@@ -95,10 +95,10 @@
 			}
 		},
 		{
-			"name": "Comment",
-			"scope": "comment.documentation.heredoc",
+			"name": "Comment, Meta Attribute",
+			"scope": "comment.documentation.heredoc, meta.attribute",
 			"settings": {
-				"foreground": "#c6a4d3"
+				"foreground": "#d1aae0"
 			}
 		},
 		{
