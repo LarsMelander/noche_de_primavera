@@ -125,10 +125,13 @@
 				"comment.wildcard",
 				"comment.unused",
 				"storage.type.function.arrow.js",
-				"keyword.operator.class.php"
+				"keyword.operator.class.php",
+				"punctuation.section.function.elixir",
+				"punctuation.section.array.elixir",
+				"punctuation.section.scope.elixir"
 			],
 			"settings": {
-				"foreground": "#c0c0c0"
+				"foreground": "#d0d0d0"
 			}
 		},
 		{
@@ -168,6 +171,13 @@
 		},
 		{
 			"name": "Variable",
+			"scope": "variable.other.anonymous.elixir",
+			"settings": {
+				"foreground": "#cec5fd"
+			}
+		},
+		{
+			"name": "Variable",
 			"scope": [
 				"variable.other.constant",
 				"variable.other.object.js",
@@ -191,10 +201,24 @@
 			}
 		},
 		{
-			"name": "Number, Constant",
+			"name": "Constant",
 			"scope": "constant.numeric, constant.language, keyword.other.unit",
 			"settings": {
 				"foreground": "#baaeff"
+			}
+		},
+		{
+			"name": "Constant Number",
+			"scope": "constant.numeric",
+			"settings": {
+				"foreground": "#d2d1ff"
+			}
+		},
+		{
+			"name": "Key",
+			"scope": "constant.language.symbol.elixir",
+			"settings": {
+				"foreground": "#efffb3"
 			}
 		},
 		{
@@ -211,12 +235,20 @@
 				"constant.character",
 				"variable.parameter",
 				"punctuation.section.embedded.elixir",
+				"punctuation.definition.map.elixir",
 				"keyword.control.directive",
 				"variable.other.value",
 				"storage.type.annotation"
 			],
 			"settings": {
 				"foreground": "#ffc58f"
+			}
+		},
+		{
+			"name": "Definition",
+			"scope": "punctuation.definition.variable.elixir",
+			"settings": {
+				"foreground": "#ffd9b5"
 			}
 		},
 		{
