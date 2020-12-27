@@ -15,7 +15,7 @@
 		"badge.background": "#bbdaffcc",
 		"badge.foreground": "#001733",
 		"progressBar.background": "#bbdaffcc",
-		"editor.background": "#002451",
+		"editor.background": "#001d41",
 		"editor.foreground": "#ffffff",
 		"editorWidget.background": "#001c40",
 		"editor.selectionBackground": "#003f8e",
@@ -59,7 +59,8 @@
 		"terminal.ansiBrightCyan": "#78ffff",
 		"terminal.ansiBrightWhite": "#ffffff"
 	},
-	"tokenColors": [{
+	"tokenColors": [
+		{
 			"scope": "source",
 			"settings": {
 				"foreground": "#ffffff"
@@ -128,7 +129,9 @@
 				"keyword.operator.class.php",
 				"punctuation.section.function.elixir",
 				"punctuation.section.array.elixir",
-				"punctuation.section.scope.elixir"
+				"punctuation.section.scope.elixir",
+				"meta.structure.tuple.erlang",
+				"meta.structure.list.erlang"
 			],
 			"settings": {
 				"foreground": "#d0d0d0"
@@ -253,7 +256,9 @@
 		},
 		{
 			"name": "Constant",
-			"scope": ["support.constant"],
+			"scope": [
+				"support.constant"
+			],
 			"settings": {
 				"foreground": "#ffffff"
 			}
@@ -267,7 +272,13 @@
 		},
 		{
 			"name": "Class, Support, Embedded",
-			"scope": "entity.name.class, support.type, support.class, keyword.control",
+			"scope": [
+				"entity.name.class",
+				"support.type",
+				"support.class",
+				"keyword.control",
+				"constant.other.symbol.unquoted.erlang"
+			],
 			"settings": {
 				"foreground": "#ffeead"
 			}
