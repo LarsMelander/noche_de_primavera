@@ -26,7 +26,7 @@
 		"editor.findMatchHighlightBackground": "#a5773b",
 		"editor.findMatchBackground": "#a5543b",
 		"editorRuler.foreground": "#14345a",
-		"editor.lineHighlightBackground": "#00346e",
+		"editor.lineHighlightBackground": "#052144",
 		"editorCursor.foreground": "#ffffff",
 		"editorWhitespace.foreground": "#404f7d",
 		"editorLineNumber.activeForeground": "#949494",
@@ -131,7 +131,8 @@
 				"punctuation.section.array.elixir",
 				"punctuation.section.scope.elixir",
 				"meta.structure.tuple.erlang",
-				"meta.structure.list.erlang"
+				"meta.structure.list.erlang",
+				"keyword.operator.symbolic.erlang"
 			],
 			"settings": {
 				"foreground": "#d0d0d0"
