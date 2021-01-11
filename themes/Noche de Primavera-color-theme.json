@@ -220,9 +220,9 @@
 		},
 		{
 			"name": "Key",
-			"scope": "constant.language.symbol.elixir",
+			"scope": "constant.language.symbol.elixir, storage.control.clojure",
 			"settings": {
-				"foreground": "#efffb3"
+				"foreground": "#fff5cb"
 			}
 		},
 		{
@@ -250,7 +250,7 @@
 		},
 		{
 			"name": "Definition",
-			"scope": "punctuation.definition.variable.elixir",
+			"scope": "punctuation.definition.variable.elixir, meta.metadata.simple.clojure",
 			"settings": {
 				"foreground": "#ffd9b5"
 			}
@@ -266,7 +266,7 @@
 		},
 		{
 			"name": "Embedded",
-			"scope": "source.elixir.embedded.source",
+			"scope": "source.elixir.embedded.source, entity.global.clojure",
 			"settings": {
 				"foreground": "#fff2e6"
 			}
