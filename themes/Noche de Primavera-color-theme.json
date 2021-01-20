@@ -75,7 +75,7 @@
 		},
 		{
 			"name": "Support Function",
-			"scope": "support.function",
+			"scope": "support.function, entity.name.function.target.makefile",
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#ffe3b6"
@@ -118,6 +118,7 @@
 		{
 			"name": "Operator, Comment",
 			"scope": [
+				"meta.tag",
 				"keyword.operator.other",
 				"keyword.operator.logical",
 				"keyword.operator.misc",
@@ -132,10 +133,19 @@
 				"punctuation.section.scope.elixir",
 				"meta.structure.tuple.erlang",
 				"meta.structure.list.erlang",
-				"keyword.operator.symbolic.erlang"
+				"keyword.operator.symbolic.erlang",
+				"punctuation.separator.key-value.html"
 			],
 			"settings": {
 				"foreground": "#d0d0d0"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation.separator.key-value.makefile",
+			"settings": {
+				"foreground": "#d0d0d0",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -147,7 +157,7 @@
 		},
 		{
 			"name": "Variable, String Link, Regular Expression",
-			"scope": "variable, entity.other.attribute-name, meta.tag, declaration.tag",
+			"scope": "variable, entity.other.attribute-name, declaration.tag",
 			"settings": {
 				"foreground": "#FFFFFF"
 			}
@@ -168,7 +178,11 @@
 		},
 		{
 			"name": "Variable, Symbols",
-			"scope": "variable.other.anonymous, constant.other.symbol",
+			"scope": [
+				"variable.other.anonymous",
+				"constant.other.symbol",
+				"meta.scope.prerequisites.makefile"
+			],
 			"settings": {
 				"foreground": "#a9edf0"
 			}
@@ -307,8 +321,8 @@
 			}
 		},
 		{
-			"name": "Function, Punctuation",
-			"scope": "entity.name.function, punctuation.separator.key-value.makefile",
+			"name": "Function",
+			"scope": "entity.name.function",
 			"settings": {
 				"fontStyle": "italic"
 			}
