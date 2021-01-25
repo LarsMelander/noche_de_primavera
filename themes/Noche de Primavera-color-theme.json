@@ -256,7 +256,9 @@
 				"punctuation.definition.map.elixir",
 				"keyword.control.directive",
 				"variable.other.value",
-				"storage.type.annotation"
+				"storage.type.annotation",
+				"punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.template-expression.end.ts"
 			],
 			"settings": {
 				"foreground": "#ffc58f"
@@ -271,9 +273,7 @@
 		},
 		{
 			"name": "Constant",
-			"scope": [
-				"support.constant"
-			],
+			"scope": ["support.constant"],
 			"settings": {
 				"foreground": "#ffffff"
 			}
