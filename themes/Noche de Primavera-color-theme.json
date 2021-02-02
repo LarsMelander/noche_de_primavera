@@ -61,15 +61,38 @@
 	},
 	"tokenColors": [
 		{
-			"scope": "source",
+			"name": "Source, Operator, Constant, Variable, String Link, Regular Expression, Diff foreground",
+			"scope": [
+				"source",
+				"keyword.operator.assignment.js",
+				"keyword.operator.class",
+				"keyword.operator.arithmetic",
+				"constant.other",
+				"source.php.embedded.line",
+				"variable",
+				"entity.other.attribute-name",
+				"declaration.tag",
+				"support.constant",
+				"markup.inserted.diff",
+				"markup.deleted.diff",
+				"meta.diff.header.to-file",
+				"meta.diff.header.from-file"
+			],
 			"settings": {
 				"foreground": "#ffffff"
 			}
 		},
 		{
 			"name": "Keyword, Storage type",
-			"scope": "keyword, meta.var.expr.js, storage.type, storage.class",
+			"scope": [
+				"keyword",
+				"keyword.operator",
+				"meta.var.expr.js",
+				"storage.type",
+				"storage.class"
+			],
 			"settings": {
+				"fontStyle": "bold",
 				"foreground": "#fffeb6"
 			}
 		},
@@ -100,19 +123,6 @@
 			"scope": "comment.documentation.heredoc, meta.attribute",
 			"settings": {
 				"foreground": "#d1aae0"
-			}
-		},
-		{
-			"name": "Operator",
-			"scope": [
-				"keyword.operator.class",
-				"keyword.operator",
-				"keyword.operator.arithmetic",
-				"constant.other",
-				"source.php.embedded.line"
-			],
-			"settings": {
-				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -153,13 +163,6 @@
 			"scope": "markup.deleted.git_gutter",
 			"settings": {
 				"foreground": "#ff9da4"
-			}
-		},
-		{
-			"name": "Variable, String Link, Regular Expression",
-			"scope": "variable, entity.other.attribute-name, declaration.tag",
-			"settings": {
-				"foreground": "#FFFFFF"
 			}
 		},
 		{
@@ -272,13 +275,6 @@
 			}
 		},
 		{
-			"name": "Constant",
-			"scope": ["support.constant"],
-			"settings": {
-				"foreground": "#ffffff"
-			}
-		},
-		{
 			"name": "Embedded",
 			"scope": "source.elixir.embedded.source, entity.global.clojure",
 			"settings": {
@@ -291,8 +287,9 @@
 				"entity.name.class",
 				"support.type",
 				"support.class",
-				"keyword.control",
-				"constant.other.symbol.unquoted.erlang"
+				// "keyword.control",
+				"constant.other.symbol.unquoted.erlang",
+				"meta.object-literal.key.js"
 			],
 			"settings": {
 				"foreground": "#ffeead"
@@ -356,13 +353,6 @@
 			"settings": {
 				"fontStyle": "underline",
 				"foreground": "#dadada"
-			}
-		},
-		{
-			"name": "Diff foreground",
-			"scope": "markup.inserted.diff, markup.deleted.diff, meta.diff.header.to-file, meta.diff.header.from-file",
-			"settings": {
-				"foreground": "#FFFFFF"
 			}
 		},
 		{
