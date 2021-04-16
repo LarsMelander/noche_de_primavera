@@ -76,10 +76,12 @@
 				"markup.inserted.diff",
 				"markup.deleted.diff",
 				"meta.diff.header.to-file",
-				"meta.diff.header.from-file"
+				"meta.diff.header.from-file",
+				"keyword.control.import.elm"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffffff",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -87,7 +89,6 @@
 			"scope": [
 				"keyword",
 				"keyword.operator",
-				"meta.var.expr.js",
 				"storage.type",
 				"storage.class"
 			],
@@ -108,7 +109,8 @@
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#ccff8f"
+				"foreground": "#ccff8f",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -126,7 +128,7 @@
 			}
 		},
 		{
-			"name": "Operator, Comment",
+			"name": "Operator",
 			"scope": [
 				"meta.tag",
 				"keyword.operator.other",
@@ -137,6 +139,11 @@
 				"comment.wildcard",
 				"comment.unused",
 				"storage.type.function.arrow.js",
+				"punctuation.separator.key-value.js",
+				"punctuation.separator.comma.js",
+				"punctuation.definition.block.js",
+				"meta.brace.square.js",
+				"meta.brace.round.js",
 				"keyword.operator.class.php",
 				"punctuation.section.function.elixir",
 				"punctuation.section.array.elixir",
@@ -144,7 +151,11 @@
 				"meta.structure.tuple.erlang",
 				"meta.structure.list.erlang",
 				"keyword.operator.symbolic.erlang",
-				"punctuation.separator.key-value.html"
+				"punctuation.separator.key-value.html",
+				"keyword.operator.elm",
+				"keyword.operator.arrow.elm",
+				"keyword.other.elm",
+				"punctuation.parens.elm"
 			],
 			"settings": {
 				"foreground": "#d0d0d0"
@@ -269,14 +280,20 @@
 		},
 		{
 			"name": "Definition",
-			"scope": "punctuation.definition.variable.elixir, meta.metadata.simple.clojure",
+			"scope": [
+				"punctuation.definition.variable.elixir",
+				"meta.metadata.simple.clojure"
+			],
 			"settings": {
 				"foreground": "#ffd9b5"
 			}
 		},
 		{
 			"name": "Embedded",
-			"scope": "source.elixir.embedded.source, entity.global.clojure",
+			"scope": [
+				"source.elixir.embedded.source",
+				"entity.global.clojure"
+			],
 			"settings": {
 				"foreground": "#fff2e6"
 			}
@@ -289,10 +306,13 @@
 				"support.class",
 				// "keyword.control",
 				"constant.other.symbol.unquoted.erlang",
-				"meta.object-literal.key.js"
+				// "meta.object-literal.key.js",
+				"meta.var.expr.js",
+				"storage.type.elm"
 			],
 			"settings": {
-				"foreground": "#ffeead"
+				"foreground": "#ffeead",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -336,7 +356,7 @@
 			"name": "Function, Block Level, GitGutter changed",
 			"scope": "meta.function-call, meta.block-level, markup.changed.git_gutter",
 			"settings": {
-				"foreground": "#BBDAFF"
+				"foreground": "#bbdaff"
 			}
 		},
 		{

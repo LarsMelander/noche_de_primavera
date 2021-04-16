@@ -2,9 +2,6 @@
 
 ## Noche de Primavera
 
-A dark theme for VS Code, primarily for Elixir and Elm development.
+A dark theme for VS Code, based on the bundled theme "Tomorrow Night Blue".
 
-Based on the bundled theme "Tomorrow Night Blue".
-
-* Copy the repository to ~/.vscode/extensions/
-* Install it like any other theme
+Adapted primarily for Elixir, Elm, Clojure development.
